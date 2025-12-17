@@ -279,6 +279,10 @@ a:hover {
   letter-spacing: 0.06em;
 }
 
+.letter-spacing-1 {
+  letter-spacing: 1px;
+}
+
 footer a {
   color: #1f1a17;
 }
