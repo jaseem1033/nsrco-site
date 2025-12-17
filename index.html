@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KitchenWorks | Building Modern Kitchens</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <header class="top-nav shadow-sm">
+    <div class="container d-flex align-items-center justify-content-between">
+      <div class="brand">
+        <img src="nsrco-logo.jpg" alt="NSRCO Logo" class="logo-img">
+      </div>
+      <nav class="d-none d-md-flex align-items-center gap-4">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#products" class="nav-link">Products</a>
+        <a href="#about" class="nav-link">About Us</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <a href="#quote" class="btn btn-cta">Get a Quote</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero position-relative text-white d-flex align-items-center">
+      <div class="hero-overlay"></div>
+      <div class="container position-relative">
+        <div class="row">
+          <div class="col-lg-8">
+            <h1 class="display-2 fw-semibold mb-3">Crafting Premium Kitchen Spaces</h1>
+            <p class="lead mb-4">Reliable equipment & modern designs for restaurants, hotels, and homes.</p>
+            <div class="d-flex flex-wrap gap-3">
+              <a href="#products" class="btn btn-outline-light btn-pill">View Products</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="py-5">
+      <div class="container">
+        <div class="row align-items-center gy-4">
+          <div class="col-lg-4">
+            <p class="section-eyebrow mb-2">Our Services</p>
+            <h2 class="fw-semibold mb-4">Equipment for every kitchen need</h2>
+            <a href="#services" class="btn btn-dark btn-pill">All Services</a>
+          </div>
+          <div class="col-lg-8">
+            <div class="row g-4">
+              <div class="col-md-6">
+                <div class="service-card h-100">
+                  <div class="icon">🏢</div>
+                  <h5 class="fw-semibold mb-2">Commercial Kitchens</h5>
+                  <p class="mb-0">Design, supply, and install full-line commercial kitchen equipment for restaurants and hotels.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="service-card h-100">
+                  <div class="icon">🛠️</div>
+                  <h5 class="fw-semibold mb-2">Site Management</h5>
+                  <p class="mb-0">On-site supervision, installation, and commissioning to ensure quality and safety.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="service-card h-100">
+                  <div class="icon">🔧</div>
+                  <h5 class="fw-semibold mb-2">Preventive Maintenance & Repairs</h5>
+                  <p class="mb-0">Scheduled PMs, emergency callouts, and OEM parts to keep uptime high and compliance on track.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="service-card h-100">
+                  <div class="icon">📚</div>
+                  <h5 class="fw-semibold mb-2">Training & Handover</h5>
+                  <p class="mb-0">Staff training on safe operation, cleaning protocols, and daily checks to extend equipment life.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="py-5 bg-light">
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-between mb-5">
+          <div>
+            <p class="section-eyebrow mb-2">Featured Products</p>
+            <h2 class="fw-semibold mb-0">Premium Kitchen Equipment</h2>
+          </div>
+          <a href="#products" class="btn btn-dark btn-pill">All Products</a>
+        </div>
+        
+        <div id="productsCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <!-- Slide 1 - Products 1-3 -->
+            <div class="carousel-item active">
+              <div class="row g-4">
+                <div class="col-md-4">
+                  <div class="product-card h-100">
+                    <div class="product-image ratio ratio-16x9 rounded-2 overflow-hidden mb-2">
+                      <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80" class="w-100 h-100 object-fit-cover" alt="Commercial Refrigerator">
+                    </div>
+                    <h6 class="fw-semibold mb-2">Commercial Refrigerator</h6>
+                    <p class="text-muted small mb-2">High-capacity stainless steel commercial refrigerator with precise temperature control.</p>
+                    <ul class="list-unstyled mb-0 small">
+                      <li>• Stainless steel construction</li>
+                      <li>• Energy efficient</li>
+                      <li>• Multiple temperature zones</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="product-card h-100">
+                    <div class="product-image ratio ratio-16x9 rounded-2 overflow-hidden mb-2">
+                      <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=80" class="w-100 h-100 object-fit-cover" alt="Industrial Oven">
+                    </div>
+                    <h6 class="fw-semibold mb-2">Industrial Convection Oven</h6>
+                    <p class="text-muted small mb-2">Professional-grade convection oven with advanced heating technology for consistent cooking.</p>
+                    <ul class="list-unstyled mb-0 small">
+                      <li>• Multi-rack capacity</li>
+                      <li>• Digital controls</li>
+                      <li>• Self-cleaning feature</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="product-card h-100">
+                    <div class="product-image ratio ratio-16x9 rounded-2 overflow-hidden mb-2">
+                      <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1200&q=80" class="w-100 h-100 object-fit-cover" alt="Commercial Dishwasher">
+                    </div>
+                    <h6 class="fw-semibold mb-2">Commercial Dishwasher</h6>
+                    <p class="text-muted small mb-2">Heavy-duty commercial dishwasher with high-speed washing cycles and sanitization.</p>
+                    <ul class="list-unstyled mb-0 small">
+                      <li>• High-volume capacity</li>
+                      <li>• Sanitization cycle</li>
+                      <li>• Water-efficient operation</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Slide 2 - Products 4-6 -->
+            <div class="carousel-item">
+              <div class="row g-4">
+                <div class="col-md-4">
+                  <div class="product-card h-100">
+                    <div class="product-image ratio ratio-16x9 rounded-2 overflow-hidden mb-2">
+                      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80" class="w-100 h-100 object-fit-cover" alt="Commercial Range">
+                    </div>
+                    <h6 class="fw-semibold mb-2">Commercial Range & Hood System</h6>
+                    <p class="text-muted small mb-2">Professional-grade gas range with integrated exhaust hood system for powerful cooking.</p>
+                    <ul class="list-unstyled mb-0 small">
+                      <li>• High-BTU burners</li>
+                      <li>• Automatic exhaust system</li>
+                      <li>• Durable construction</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="product-card h-100">
+                    <div class="product-image ratio ratio-16x9 rounded-2 overflow-hidden mb-2">
+                      <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80" class="w-100 h-100 object-fit-cover" alt="Commercial Mixer">
+                    </div>
+                    <h6 class="fw-semibold mb-2">Commercial Mixer</h6>
+                    <p class="text-muted small mb-2">Heavy-duty commercial stand mixer perfect for bakeries and food preparation areas.</p>
+                    <ul class="list-unstyled mb-0 small">
+                      <li>• Multiple speed settings</li>
+                      <li>• Large capacity bowl</li>
+                      <li>• Durable stainless steel</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="product-card h-100">
+                    <div class="product-image ratio ratio-16x9 rounded-2 overflow-hidden mb-2">
+                      <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=1200&q=80" class="w-100 h-100 object-fit-cover" alt="Food Prep Table">
+                    </div>
+                    <h6 class="fw-semibold mb-2">Stainless Steel Prep Table</h6>
+                    <p class="text-muted small mb-2">Sturdy commercial food preparation table with storage and easy-to-clean surface.</p>
+                    <ul class="list-unstyled mb-0 small">
+                      <li>• Food-grade stainless steel</li>
+                      <li>• Under-shelf storage</li>
+                      <li>• Adjustable height options</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Carousel Controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#productsCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#productsCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          
+          <!-- Carousel Indicators -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#productsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#productsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="about" class="py-5 bg-light">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-6">
+            <p class="section-eyebrow mb-2">About Our Company</p>
+            <h2 class="fw-semibold mb-3">Professional solutions for safe & efficient kitchens</h2>
+            <p class="text-muted mb-4">We design, supply, and install kitchen equipment that keeps service moving. From bespoke stainless fabrication to smart appliances, we focus on durability, safety, and seamless operation.</p>
+            <a href="#about" class="btn btn-dark btn-pill">Read More</a>
+          </div>
+          <div class="col-lg-6">
+            <div class="about-image ratio ratio-4x3 rounded-4 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1400&q=80" class="w-100 h-100 object-fit-cover" alt="Team working on kitchen build">
+            </div>
+          </div>
+        </div>
+        <div class="row text-center mt-5 g-0 stats-row">
+          <div class="col-md-4 py-4">
+            <div class="stat-value">48</div>
+            <div class="stat-label">Kitchens In Progress</div>
+          </div>
+          <div class="col-md-4 py-4">
+            <div class="stat-value">282</div>
+            <div class="stat-label">Products Completed</div>
+          </div>
+          <div class="col-md-4 py-4">
+            <div class="stat-value">35</div>
+            <div class="stat-label">Supply Partners</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="clients" class="clients-section text-white">
+      <div class="container text-center py-5">
+        <p class="section-eyebrow mb-2 text-uppercase text-white-50">Our Clients</p>
+        <h2 class="fw-semibold mb-5">We believe every client is a valuable partner</h2>
+        <div class="row justify-content-center g-5">
+          <div class="col-md-4">
+            <div class="client-logo">Kitchen Collective</div>
+          </div>
+          <div class="col-md-4">
+            <div class="client-logo">Chef's Table Group</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="pt-5 pb-4 border-top">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-md-3">
+          <h5 class="fw-semibold">KitchenWorks</h5>
+          <nav class="footer-nav d-flex flex-column gap-2 mt-3">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#products">Products</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact Us</a>
+          </nav>
+        </div>
+        <div class="col-md-3">
+          <h6 class="fw-semibold text-uppercase small">Head Office</h6>
+          <p class="mb-2 mt-3">123 Copper Ave, Suite 400<br>San Francisco, CA 94158</p>
+          <p class="mb-1">123-456-7890</p>
+          <p class="mb-0">hello@kitchenworks.com</p>
+        </div>
+        <div class="col-md-3">
+          <h6 class="fw-semibold text-uppercase small">Socials</h6>
+          <div class="d-flex flex-column gap-2 mt-3">
+            <a href="#">Instagram</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">YouTube</a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <h6 class="fw-semibold text-uppercase small">Inquiries</h6>
+          <p class="mt-3 mb-3">Looking for a quote?</p>
+          <a href="#quote" class="btn btn-cta w-100">Get a Quote</a>
+          <a href="#" class="d-block mt-3">Become a supplier</a>
+        </div>
+      </div>
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mt-4 pt-3 border-top">
+        <a href="#" class="mb-2 mb-md-0">Privacy Policy</a>
+        <a href="#home" class="mb-2 mb-md-0">Back to Top</a>
+        <small class="text-muted">© 2025 KitchenWorks. Built with Bootstrap.</small>
+      </div>
+    </div>
+  </footer>
+
+  <section id="quote" class="quote-bar py-4">
+    <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+      <div>
+        <h5 class="mb-1">Ready to upgrade your kitchen?</h5>
+        <p class="mb-0 text-muted">Tell us about your project and we’ll build a custom equipment package.</p>
+      </div>
+      <a href="#contact" class="btn btn-dark btn-pill">Contact Us</a>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
+
