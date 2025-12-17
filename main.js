@@ -26,7 +26,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
       if (el) {
         e.preventDefault();
         window.scrollTo({
-          top: el.offsetTop - 70,
+          top: el.offsetTop + 30,
           behavior: 'smooth',
         });
       }
