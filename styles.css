@@ -55,9 +55,9 @@ a:hover {
 }
 
 .logo-img {
-  height: 36px;
+  height: 50px;
   width: auto;
-  max-width: 140px;
+  max-width: 180px;
   object-fit: contain;
   display: block;
   background: transparent;
