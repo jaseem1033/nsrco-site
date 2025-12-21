@@ -97,7 +97,7 @@ a:hover {
 }
 
 .hero {
-  min-height: 95vh;
+  min-height: 100vh;
   background: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1800&q=80') center/cover no-repeat;
   padding-top: 120px;
   padding-bottom: 120px;
@@ -107,6 +107,33 @@ a:hover {
   position: absolute;
   inset: 0;
   background: linear-gradient(90deg, rgba(0,0,0,0.55), rgba(0,0,0,0.35));
+}
+
+.scroll-down-btn {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255, 255, 255, 0.7);
+  transition: color 0.3s ease;
+  z-index: 10;
+  animation: bounce 2s infinite;
+}
+
+.scroll-down-btn:hover {
+  color: #fff;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  40% {
+    transform: translateX(-50%) translateY(-10px);
+  }
+  60% {
+    transform: translateX(-50%) translateY(-5px);
+  }
 }
 
 .section-eyebrow {
