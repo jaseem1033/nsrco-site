@@ -325,8 +325,16 @@ footer a:hover {
 }
 
 #about {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+#services {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 @media (max-width: 767px) {
@@ -372,5 +380,26 @@ footer a:hover {
   .product-card ul li {
     font-size: 0.65rem;
   }
+}
+
+.process-step {
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.process-step:hover {
+  transform: translateY(-5px);
+}
+
+.step-number {
+  color: #f45b0f !important;
+  opacity: 0.2;
+  font-weight: 800;
+  line-height: 1;
+  transition: opacity 0.3s ease;
+}
+
+.process-step:hover .step-number {
+  opacity: 1;
 }
 
