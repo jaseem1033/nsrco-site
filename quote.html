@@ -32,7 +32,30 @@
         <a href="about.html" class="nav-link">About Us</a>
         <a href="contact.html" class="nav-link">Contact</a>
       </nav>
-      <a href="quote.html" class="btn btn-cta">Get a Quote</a>
+      <a href="quote.html" class="btn btn-cta d-none d-md-inline-block">Get a Quote</a>
+
+      <button class="navbar-toggler d-md-none border-0 text-white bg-transparent" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+        </svg>
+      </button>
+
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title text-dark" id="mobileMenuLabel">Menu</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <nav class="d-flex flex-column gap-3">
+            <a href="index.html" class="nav-link text-dark fw-semibold">Home</a>
+            <a href="services.html" class="nav-link text-dark fw-semibold">Services</a>
+            <a href="products.html" class="nav-link text-dark fw-semibold">Products</a>
+            <a href="about.html" class="nav-link text-dark fw-semibold">About Us</a>
+            <a href="contact.html" class="nav-link text-dark fw-semibold">Contact</a>
+            <a href="quote.html" class="btn btn-cta w-100 text-center mt-3">Get a Quote</a>
+          </nav>
+        </div>
+      </div>
     </div>
   </header>
 
