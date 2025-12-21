@@ -346,8 +346,13 @@ footer a:hover {
     padding-top: 140px;
   }
 
-  .top-nav nav {
-    display: none !important;
+  /* Mobile Menu Styling */
+  .offcanvas .nav-link {
+    color: #1f1a17 !important; 
+  }
+  .offcanvas .nav-link:hover,
+  .offcanvas .nav-link.active {
+    color: #f45b0f !important;
   }
 
   #productsCarousel .carousel-control-prev {
@@ -401,4 +406,14 @@ footer a:hover {
 .process-step:hover .step-number {
   opacity: 1;
 }
+
+/* Mobile Menu Overrides */
+.offcanvas .nav-link {
+  color: #1f1a17 !important;
+}
+.offcanvas .nav-link:hover,
+.offcanvas .nav-link.active {
+  color: #f45b0f !important;
+}
+
 
