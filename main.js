@@ -17,6 +17,42 @@ const handleScroll = () => {
 
 window.addEventListener('scroll', handleScroll);
 
+// Update active nav link based on current page
+const updateActiveNavLink = () => {
+  const currentPath = window.location.pathname;
+  const navLinks = document.querySelectorAll('.top-nav .nav-link');
+  
+  navLinks.forEach(link => {
+    // Remove active class from all links
+    link.classList.remove('active');
+    
+    // Add active class to matching link
+    const href = link.getAttribute('href');
+    if (currentPath.includes(href) || 
+        (currentPath.endsWith('/') && href === 'index.html') ||
+        (currentPath.includes('index.html') && href === 'index.html')) {
+      link.classList.add('active');
+    }
+  });
+};
+
+// Call on page load
+updateActiveNavLink();
+
+// Also handle mobile menu links
+document.querySelectorAll('.offcanvas .nav-link').forEach(link => {
+  link.addEventListener('click', () => {
+    // Close the mobile menu
+    const offcanvasElement = document.querySelector('#mobileMenu');
+    if (offcanvasElement) {
+      const offcanvas = bootstrap.Offcanvas.getInstance(offcanvasElement);
+      if (offcanvas) {
+        offcanvas.hide();
+      }
+    }
+  });
+});
+
 // Smooth scroll for in-page links
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener('click', (e) => {

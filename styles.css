@@ -39,6 +39,30 @@ a:hover {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.02em;
+  position: relative;
+  display: inline-block;
+  padding: 8px 16px;
+  transition: color 0.3s ease;
+}
+
+.top-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #f45b0f, #ff7e3f);
+  transition: width 0.3s ease;
+  border-radius: 1px;
+  box-shadow: 0 0 10px rgba(244, 91, 15, 0.6);
+}
+
+.top-nav .nav-link:hover::after,
+.top-nav .nav-link.active::after {
+  width: 100%;
+  box-shadow: 0 0 20px rgba(244, 91, 15, 0.8), 0 0 40px rgba(244, 91, 15, 0.4);
 }
 
 .top-nav .nav-link:hover,
