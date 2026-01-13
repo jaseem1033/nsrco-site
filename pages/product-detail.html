@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,8 +23,15 @@
       padding-bottom: 60px;
       background: #000000;
     }
-    .product-header .breadcrumb a { color: #e0e0e0; }
-    .product-header .breadcrumb .active { color: #b0b0b0; }
+
+    .product-header .breadcrumb a {
+      color: #e0e0e0;
+    }
+
+    .product-header .breadcrumb .active {
+      color: #b0b0b0;
+    }
+
     .spec-table th {
       width: 40%;
       color: #b0b0b0;
@@ -38,6 +46,7 @@
     }
   </style>
 </head>
+
 <body>
   <header class="top-nav shadow-sm">
     <div class="container d-flex align-items-center justify-content-between">
@@ -52,9 +61,12 @@
         <a href="contact.html" class="nav-link">Contact</a>
       </nav>
 
-      <button class="navbar-toggler d-md-none border-0 text-white bg-transparent" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu">
-        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-          <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+      <button class="navbar-toggler d-md-none border-0 text-white bg-transparent" type="button"
+        data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list"
+          viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
         </svg>
       </button>
 
@@ -74,9 +86,12 @@
         </div>
       </div>
 
-      <button class="navbar-toggler d-md-none border-0 text-white bg-transparent" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu">
-        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-          <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+      <button class="navbar-toggler d-md-none border-0 text-white bg-transparent" type="button"
+        data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list"
+          viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
         </svg>
       </button>
 
@@ -116,31 +131,48 @@
       <div class="container">
         <div class="row g-5">
           <div class="col-lg-6">
-            <div class="ratio ratio-1x1 rounded-4 overflow-hidden pd-image-wrap">
-              <img id="pd-image" src="../images/pressure-fryer.webp" class="w-100 h-100 object-fit-contain p-4" alt="Product image">
+            <div class="product-gallery-container">
+              <div class="ratio ratio-1x1 rounded-4 overflow-hidden pd-image-wrap" id="pd-zoom-container">
+                <img id="pd-image" src="../images/pressure-fryer.webp" class="w-100 h-100 object-fit-contain p-4"
+                  alt="Product image">
+                <div id="pd-zoom-lens"></div>
+              </div>
+              <div id="pd-zoom-result" class="shadow-lg rounded-4"></div>
             </div>
             <div class="mt-3">
-              <div id="pd-thumbs" class="pd-thumb-list d-flex gap-2"></div>
+              <div id="pd-thumbs" class="pd-thumb-list d-flex gap-2 justify-content-center"></div>
             </div>
           </div>
           <div class="col-lg-6">
             <h1 id="pd-title" class="fw-bold mb-3">Product Title</h1>
             <p id="pd-desc" class="lead text-muted mb-4">Product description will load here.</p>
-            
-            <div class="mb-4">
-              <h5 class="fw-semibold mb-3">Key Features</h5>
-              <ul id="pd-features" class="list-unstyled"></ul>
+
+            <div class="product-tabs mt-4">
+              <ul class="nav nav-tabs border-0 gap-3" id="productTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="features-tab" data-bs-toggle="tab" data-bs-target="#features"
+                    type="button" role="tab" aria-controls="features" aria-selected="true">Features</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="specs-tab" data-bs-toggle="tab" data-bs-target="#specs" type="button"
+                    role="tab" aria-controls="specs" aria-selected="false">Specifications</button>
+                </li>
+              </ul>
+              <div class="tab-content py-4" id="productTabsContent">
+                <div class="tab-pane fade show active" id="features" role="tabpanel" aria-labelledby="features-tab">
+                  <ul id="pd-features" class="list-unstyled"></ul>
+                </div>
+                <div class="tab-pane fade" id="specs" role="tabpanel" aria-labelledby="specs-tab">
+                  <table class="table table-borderless spec-table">
+                    <tbody id="pd-specs"></tbody>
+                  </table>
+                </div>
+              </div>
             </div>
 
-            <div class="mb-5">
-              <h5 class="fw-semibold mb-3">Specifications</h5>
-              <table class="table table-borderless spec-table">
-                <tbody id="pd-specs"></tbody>
-              </table>
-            </div>
-
-            <div class="d-flex gap-3">
+            <div class="d-flex gap-3 mt-2">
               <a href="contact.html" class="btn btn-cta">Contact Sales</a>
+              <a href="quote.html" class="btn btn-outline-light px-4 py-2 rounded-pill">Request Quote</a>
             </div>
           </div>
         </div>
@@ -151,33 +183,34 @@
       <div class="container">
         <h3 class="fw-semibold mb-4">Related Products</h3>
         <div class="row g-4">
-          <div class="col-md-4">
+          <div class="col-md-3">
             <a href="product-detail.html?id=open-fryer" class="text-decoration-none">
               <div class="product-card h-100">
                 <div class="product-image ratio ratio-1x1 rounded-2 overflow-hidden mb-2">
-                  <img src="../images/open-fryer.jpg" class="w-100 h-100 object-fit-cover" alt="Open Fryer">
+                  <img src="../images/open-fryer.jpg" class="w-100 h-100 object-fit-contain" alt="Open Fryer">
                 </div>
                 <h6 class="fw-semibold mb-2">Open Fryer</h6>
                 <p class="text-muted small mb-2">Versatile open fryers perfect for high-volume frying needs.</p>
               </div>
             </a>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-3">
             <a href="product-detail.html?id=combi-oven" class="text-decoration-none">
               <div class="product-card h-100">
                 <div class="product-image ratio ratio-1x1 rounded-2 overflow-hidden mb-2">
-                  <img src="../images/combi-oven.webp" class="w-100 h-100 object-fit-cover" alt="Combi Ovens">
+                  <img src="../images/combi-oven.webp" class="w-100 h-100 object-fit-contain" alt="Combi Ovens">
                 </div>
                 <h6 class="fw-semibold mb-2">Combi Ovens</h6>
                 <p class="text-muted small mb-2">Advanced combi ovens for baking, roasting, and steaming.</p>
               </div>
             </a>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-3">
             <a href="product-detail.html?id=holding-equipment" class="text-decoration-none">
               <div class="product-card h-100">
                 <div class="product-image ratio ratio-1x1 rounded-2 overflow-hidden mb-2">
-                  <img src="../images/holding-equipment.webp" class="w-100 h-100 object-fit-cover" alt="Holding Equipment">
+                  <img src="../images/holding-equipment.webp" class="w-100 h-100 object-fit-contain"
+                    alt="Holding Equipment">
                 </div>
                 <h6 class="fw-semibold mb-2">Holding Equipment</h6>
                 <p class="text-muted small mb-2">Reliable holding equipment to keep food at the perfect temperature.</p>
@@ -216,13 +249,13 @@
             <a href="#">YouTube</a>
           </div>
         </div>
-        </div>
       </div>
-      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mt-4 pt-3 border-top">
-        <a href="privacy-policy.html" class="mb-2 mb-md-0">Privacy Policy</a>
-        <a href="#" class="mb-2 mb-md-0">Back to Top</a>
-        <small class="text-muted">© 2025 NSRCO </small>
-      </div>
+    </div>
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mt-4 pt-3 border-top">
+      <a href="privacy-policy.html" class="mb-2 mb-md-0">Privacy Policy</a>
+      <a href="#" class="mb-2 mb-md-0">Back to Top</a>
+      <small class="text-muted">© 2025 NSRCO </small>
+    </div>
     </div>
   </footer>
 
@@ -231,4 +264,5 @@
   <script src="../js/product-detail.js"></script>
   <script src="../js/main.js"></script>
 </body>
+
 </html>
