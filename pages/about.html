@@ -1,22 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Us | NSRCO</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="../css/styles.css" rel="stylesheet">
-  <style>
-    .page-header {
-      padding-top: 120px;
-      padding-bottom: 60px;
-      background: #f8f9fa;
-    }
-  </style>
 </head>
+
 <body>
   <header class="top-nav shadow-sm">
     <div class="container d-flex align-items-center justify-content-between">
@@ -31,25 +26,28 @@
         <a href="contact.html" class="nav-link">Contact</a>
       </nav>
 
-      <button class="navbar-toggler d-md-none border-0 text-white bg-transparent" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu">
-        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-          <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+      <button class="navbar-toggler d-md-none border-0 text-white bg-transparent" type="button"
+        data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list"
+          viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
         </svg>
       </button>
 
       <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title text-dark" id="mobileMenuLabel">Menu</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <div class="offcanvas-header pt-4 px-4">
+          <h5 class="offcanvas-title text-white" id="mobileMenuLabel">Menu</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
         </div>
-        <div class="offcanvas-body">
+        <div class="offcanvas-body p-4">
           <nav class="d-flex flex-column gap-3">
-            <a href="../index.html" class="nav-link text-dark fw-semibold">Home</a>
-            <a href="services.html" class="nav-link text-dark fw-semibold">Services</a>
-            <a href="products.html" class="nav-link text-dark fw-semibold">Products</a>
-            <a href="about.html" class="nav-link text-dark fw-semibold">About Us</a>
-            <a href="contact.html" class="nav-link text-dark fw-semibold">Contact</a>
-            <a href="quote.html" class="btn btn-cta w-100 text-center mt-3">Get a Quote</a>
+            <a href="../index.html" class="nav-link text-white fw-semibold">Home</a>
+            <a href="services.html" class="nav-link text-white fw-semibold">Services</a>
+            <a href="products.html" class="nav-link text-white fw-semibold">Products</a>
+            <a href="about.html" class="nav-link text-white fw-semibold active">About Us</a>
+            <a href="contact.html" class="nav-link text-white fw-semibold">Contact</a>
           </nav>
         </div>
       </div>
@@ -57,77 +55,89 @@
   </header>
 
   <main>
-    <section class="page-header text-center">
+    <section class="page-header text-center" style="background: #000; padding-top: 160px; padding-bottom: 80px;">
       <div class="container">
-        <h1 class="display-4 fw-bold">About Us</h1>
-        <p class="lead text-muted">Building the future of commercial kitchens</p>
+        <h1 class="display-3 fw-bold text-orange mb-3">About Us</h1>
+        <p class="lead text-muted">Building the future of commercial kitchens with industrial excellence</p>
       </div>
     </section>
 
-    <section id="about" class="py-5">
-      <div class="container">
-        <div class="row g-4 align-items-center">
+    <section id="about" class="py-5" style="background: #0a0a0a;">
+      <div class="container py-4">
+        <div class="row g-5 align-items-center">
           <div class="col-lg-6">
-            <p class="section-eyebrow mb-2">Our Story</p>
-            <h2 class="fw-semibold mb-3">Professional solutions for safe & efficient kitchens</h2>
-            <p class="text-muted mb-4">We design, supply, and install kitchen equipment that keeps service moving. From bespoke stainless fabrication to smart appliances, we focus on durability, safety, and seamless operation.</p>
-            <p class="text-muted mb-4">With over two decades of experience, NSRCO has established itself as a leader in the commercial kitchen industry. Our dedicated team of engineers and designers work tirelessly to ensure every project meets the highest standards of quality and efficiency.</p>
-            <ul class="list-unstyled mb-4">
-              <li class="mb-2 d-flex align-items-center"><span class="text-primary me-2">✓</span> Premium Quality Materials</li>
-              <li class="mb-2 d-flex align-items-center"><span class="text-primary me-2">✓</span> Custom Design Solutions</li>
-              <li class="mb-2 d-flex align-items-center"><span class="text-primary me-2">✓</span> 24/7 Technical Support</li>
-              <li class="mb-2 d-flex align-items-center"><span class="text-primary me-2">✓</span> Energy Efficient Equipment</li>
+            <p class="section-eyebrow mb-3">Our Story</p>
+            <h2 class="display-5 fw-bold text-white mb-4">Professional solutions for safe & efficient kitchens</h2>
+            <p class="text-muted mb-4 fs-5">We design, supply, and install kitchen equipment that keeps service moving.
+              From bespoke stainless fabrication to smart appliances, we focus on durability, safety, and seamless
+              operation.</p>
+            <p class="text-muted mb-4">With over two decades of experience, NSRCO has established itself as a leader in
+              the commercial kitchen industry. Our dedicated team of engineers and designers work tirelessly to ensure
+              every project meets the highest standards of quality and efficiency.</p>
+            <ul class="list-unstyled mb-5">
+              <li class="mb-3 d-flex align-items-center"><span class="text-primary me-3">✓</span> <span
+                  class="text-white-50">Premium Quality Materials</span></li>
+              <li class="mb-3 d-flex align-items-center"><span class="text-primary me-3">✓</span> <span
+                  class="text-white-50">Custom Design Solutions</span></li>
+              <li class="mb-3 d-flex align-items-center"><span class="text-primary me-3">✓</span> <span
+                  class="text-white-50">24/7 Technical Support</span></li>
+              <li class="mb-0 d-flex align-items-center"><span class="text-primary me-3">✓</span> <span
+                  class="text-white-50">Energy Efficient Equipment</span></li>
             </ul>
           </div>
           <div class="col-lg-6">
-            <div class="about-image ratio ratio-4x3 rounded-4 overflow-hidden">
-              <img src="factory.avif" class="w-100 h-100 object-fit-cover" alt="NSRCO Factory">
+            <div class="about-image ratio ratio-4x3 rounded-4 overflow-hidden shadow-lg"
+              style="border: 1px solid #333;">
+              <img src="../images/factory.avif" class="w-100 h-100 object-fit-cover" alt="NSRCO Factory">
             </div>
           </div>
         </div>
 
-        <div class="row mt-5 g-4">
+        <div class="row mt-5 pt-4 g-4">
           <div class="col-md-4">
-            <div class="p-4 bg-white rounded-4 shadow-sm h-100">
-              <h5 class="fw-semibold mb-3">Quality Assurance</h5>
-              <p class="text-muted small mb-0">We source only the finest materials and equipment to ensure longevity and performance in demanding kitchen environments.</p>
+            <div class="product-card h-100">
+              <h5 class="fw-bold text-white mb-3">Quality Assurance</h5>
+              <p class="text-muted mb-0">We source only the finest materials and equipment to ensure longevity and
+                performance in demanding kitchen environments.</p>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="p-4 bg-white rounded-4 shadow-sm h-100">
-              <h5 class="fw-semibold mb-3">Customer Focus</h5>
-              <p class="text-muted small mb-0">Your success is our priority. We work closely with you to understand your unique needs and deliver tailored solutions.</p>
+            <div class="product-card h-100">
+              <h5 class="fw-bold text-white mb-3">Customer Focus</h5>
+              <p class="text-muted mb-0">Your success is our priority. We work closely with you to understand your
+                unique needs and deliver tailored solutions.</p>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="p-4 bg-white rounded-4 shadow-sm h-100">
-              <h5 class="fw-semibold mb-3">Innovation</h5>
-              <p class="text-muted small mb-0">We stay ahead of industry trends to bring you the latest technologies and energy-efficient designs.</p>
+            <div class="product-card h-100">
+              <h5 class="fw-bold text-white mb-3">Innovation</h5>
+              <p class="text-muted mb-0">We stay ahead of industry trends to bring you the latest technologies and
+                energy-efficient designs.</p>
             </div>
           </div>
         </div>
-        
-        <div id="achievements" class="row text-center mt-5 pt-4 border-top g-4">
-          <div class="col-12 mb-3">
-            <p class="section-eyebrow mb-2 text-uppercase">Our Impact</p>
-            <h3 class="fw-semibold">Growing with every kitchen we build</h3>
+
+        <div id="achievements" class="row text-center mt-5 pt-5 g-4 border-top" style="border-color: #333 !important;">
+          <div class="col-12 mb-4">
+            <p class="section-eyebrow mb-2">Our Impact</p>
+            <h3 class="display-6 fw-bold text-white">Growing with every kitchen we build</h3>
           </div>
           <div class="col-md-4">
-            <div class="stat-item">
-              <div class="display-5 fw-bold mb-1 text-dark"><span class="counter" data-target="1500">0</span>+</div>
-              <p class="text-muted text-uppercase letter-spacing-1 small mb-0">Products Sold</p>
+            <div class="stat-item p-4">
+              <div class="display-4 fw-bold mb-2 text-primary"><span class="counter" data-target="1500">0</span>+</div>
+              <p class="text-muted text-uppercase letter-spacing-1 small mb-0 fw-bold">Products Sold</p>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="stat-item">
-              <div class="display-5 fw-bold mb-1 text-dark"><span class="counter" data-target="50">0</span>+</div>
-              <p class="text-muted text-uppercase letter-spacing-1 small mb-0">Service Locations</p>
+            <div class="stat-item p-4">
+              <div class="display-4 fw-bold mb-2 text-primary"><span class="counter" data-target="50">0</span>+</div>
+              <p class="text-muted text-uppercase letter-spacing-1 small mb-0 fw-bold">Service Locations</p>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="stat-item">
-              <div class="display-5 fw-bold mb-1 text-dark"><span class="counter" data-target="200">0</span>+</div>
-              <p class="text-muted text-uppercase letter-spacing-1 small mb-0">Projects Completed</p>
+            <div class="stat-item p-4">
+              <div class="display-4 fw-bold mb-2 text-primary"><span class="counter" data-target="200">0</span>+</div>
+              <p class="text-muted text-uppercase letter-spacing-1 small mb-0 fw-bold">Projects Completed</p>
             </div>
           </div>
         </div>
@@ -150,7 +160,7 @@
         </div>
         <div class="col-md-3">
           <h6 class="fw-semibold text-uppercase small">Head Office</h6>
-          <p class="mb-2 mt-3">42H4+Q2C, Angadipuram<br>Nediyiruppu, Kerala 673638, India</p>
+          <p class="mb-2 mt-3">Kondotty, Malappuram road,<br>Musliyarangadi, Kerala 673638</p>
           <p class="mb-1">+91 7593899929</p>
           <p class="mb-0">bbroast@yahoo.com</p>
         </div>
@@ -165,7 +175,7 @@
         <div class="col-md-3">
           <h6 class="fw-semibold text-uppercase small">Inquiries</h6>
           <p class="mt-3 mb-3">Looking for a quote?</p>
-          <a href="quote.html" class="btn btn-cta w-100">Get a Quote</a>
+          <a href="quote.html" class="btn btn-pill w-100">Get a Quote</a>
         </div>
       </div>
       <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mt-4 pt-3 border-top">
@@ -179,4 +189,5 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../js/main.js"></script>
 </body>
+
 </html>

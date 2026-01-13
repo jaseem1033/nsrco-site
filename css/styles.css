@@ -4,6 +4,10 @@ body {
   background: #0a0a0a;
 }
 
+.text-orange {
+  color: #f05a28 !important;
+}
+
 /* Product Detail Gallery */
 .pd-image-wrap {
   background: #1a1a1a;
