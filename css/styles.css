@@ -230,7 +230,7 @@ a:hover {
 
 .featured-product {
   background: #000000;
-  min-height: 60vh;
+  min-height: 45vh;
   display: flex;
   align-items: stretch;
   transition: all 0.4s ease;
@@ -241,8 +241,9 @@ a:hover {
 }
 
 .featured-product-image {
-  width: 60vw;
-  height: 60vh;
+  width: 55vw;
+  min-height: 45vh;
+  height: auto;
   overflow: hidden;
   flex-shrink: 0;
   position: relative;
@@ -262,25 +263,26 @@ a:hover {
 }
 
 .featured-product-info {
-  width: 40vw;
-  padding: clamp(1.5rem, 2.5vw, 3rem);
+  width: 45vw;
+  padding: clamp(1.5rem, 2vw, 2.5rem);
   display: flex;
   flex-direction: column;
   justify-content: center;
   border-left: 1px solid rgba(255, 255, 255, 0.1);
-  height: 60vh;
-  overflow: hidden;
+  min-height: 45vh;
+  height: auto;
+  overflow: visible;
 }
 
 .featured-product-info h3 {
-  font-size: clamp(1.75rem, 2.5vw, 2.3rem) !important;
-  margin-bottom: 0.8rem !important;
+  font-size: clamp(1.5rem, 2vw, 1.8rem) !important;
+  margin-bottom: 0.6rem !important;
 }
 
 .featured-product-info .text-muted {
-  font-size: 1.2rem !important;
-  line-height: 1.6 !important;
-  margin-bottom: 1rem !important;
+  font-size: 1rem !important;
+  line-height: 1.5 !important;
+  margin-bottom: 0.8rem !important;
 }
 
 .featured-product-info .mb-4 {
@@ -316,7 +318,7 @@ a:hover {
 
   .featured-product-image {
     width: 100%;
-    height: 60vh;
+    height: 40vh;
     margin-bottom: 0;
   }
 
@@ -360,9 +362,9 @@ a:hover {
 }
 
 .featured-product h3 {
-  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
   letter-spacing: -0.02em;
-  margin-bottom: 1.5rem !important;
+  margin-bottom: 1rem !important;
   background: linear-gradient(90deg, #fff, #aaa);
   -webkit-background-clip: text;
   background-clip: text;
