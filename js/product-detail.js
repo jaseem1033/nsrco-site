@@ -108,7 +108,7 @@
   const featuresEl = document.querySelector('#pd-features');
   if (featuresEl && Array.isArray(product.features)) {
     featuresEl.innerHTML = product.features.map(f => (
-      `<li class="mb-3 d-flex align-items-center"><span class="badge rounded-pill bg-primary me-3 text-primary bg-opacity-10" style="width: 8px; height: 8px; padding: 0;"> </span><span>${f}</span></li>`
+      `<li class="mb-3 d-flex align-items-center"><span class="badge rounded-pill me-3" style="width: 8px; height: 8px; padding: 0; background-color: #f05a28;"> </span><span>${f}</span></li>`
     )).join('');
   }
 
