@@ -10,140 +10,78 @@ const categories = [
 const productsData = [
   // --- Pressure Fryers (4 items) ---
   {
-    id: "pf-100",
-    name: "Pressure Fryer PF-100",
+    id: "nsrco-pf-1800",
+    name: "NSRCO Pressure Fryer 1800",
     category: "pressure-fryer",
     priority: 1,
-    image: "../images/pressure-fryer.webp",
-    images: ["../images/pressure-fryer.webp", "../images/pressure-fryer.webp", "../images/pressure-fryer.webp"],
-    description: "Compact high-efficiency pressure fryer ideal for small to medium volume kitchens.",
-    features: ["Built-in filtration", "Digital controls", "Stainless steel pot", "Energy saving mode"],
-    specs: { "Oil Capacity": "15 Liters", "Power": "10 kW", "Temp Range": "50-200°C" }
+    image: "../images/nsrco-pf-1800.png",
+    images: ["../images/nsrco-pf-1800.png", "../images/nsrco-pf-1800.png", "../images/nsrco-pf-1800.png"],
+    description: "Round cooking well with 21 liter cooking oil capacity operates between 12-14 psi gauge pressure at temperatures up to 375 ̊ F.",
+    features: ["Fast and productive – specifically designed for high volume production, cooks up to 40 pieces of fresh bone-in chicken per load in as little as 10 minutes*.", "Unique Pressure Activated Cover Locking Mechanism – quick closing and opening single action sealing including a pressure- activated cover locking mechanism for safety and ease of use."
+    ,"Digital controls", "Stainless steel pot",],
+    specs: { "Oil Capacity": "21 Liters","Power":"380 V", "Watts": "9 kW", "Temp Range": "50-200°C" }
   },
   {
-    id: "pf-200",
-    name: "Pressure Fryer PF-200 Pro",
+    id: "nsrco-pf-1800-hp",
+    name: "NSRCO Pressure Fryer HP",
     category: "pressure-fryer",
     priority: 2,
-    image: "../images/pressure-fryer.webp",
-    images: ["../images/pressure-fryer.webp", "../images/pressure-fryer.webp", "../images/pressure-fryer.webp"],
-    description: "Standard model with advanced pressure technology for juicier fried chicken.",
-    features: ["Auto-lift basket", "Programmable presets", "Safety lock lid", "Quick recovery"],
-    specs: { "Oil Capacity": "24 Liters", "Power": "13.5 kW", "Temp Range": "50-200°C" }
+    image: "../images/pressure-fryer.png",
+    images: ["../images/pressure-fryer.png", "../images/pressure-fryer.png", "../images/pressure-fryer.png"],
+    description: "High-performance fryer designed for safety, efficiency, and space savings, featuring a pressure-sealed lid, advanced heating systems, onboard filtration, and durable stainless-steel construction.",
+    features: ["Frying under pressure seals in flavor, reduces cook time and temperature.", "To cook smaller batches on demand with the same quality and consistency.", "With heating elements producing fast recovery", "Quick recovery"],
+    specs: { "Oil Capacity": "24 Liters", "Power": "13.5 kW", "Temp Range": "50-200°C","Type": "Electric / Gas" }
   },
-  {
-    id: "pf-300",
-    name: "Pressure Fryer PF-300 XL",
-    category: "pressure-fryer",
-    priority: 3,
-    image: "../images/pressure-fryer.webp",
-    images: ["../images/pressure-fryer.webp", "../images/pressure-fryer.webp", "../images/pressure-fryer.webp"],
-    description: "High-volume pressure fryer designed for busy chains and large restaurants.",
-    features: ["Dual filtration", "Touchscreen panel", "Heavy-duty castors", "Smart oil management"],
-    specs: { "Oil Capacity": "30 Liters", "Power": "15 kW", "Temp Range": "50-200°C" }
-  },
-  {
-    id: "pf-400",
-    name: "Pressure Fryer PF-400 Twin",
-    category: "pressure-fryer",
-    priority: 4,
-    image: "../images/pressure-fryer.webp",
-    images: ["../images/pressure-fryer.webp", "../images/pressure-fryer.webp", "../images/pressure-fryer.webp"],
-    description: "Twin-well pressure fryer for maximum throughput and versatility.",
-    features: ["Independent wells", "Integrated filter cart", "Cool-touch exterior", "USB data port"],
-    specs: { "Oil Capacity": "2x 20 Liters", "Power": "22 kW", "Temp Range": "50-200°C" }
-  },
-
+  
   // --- Open Fryers (4 items) ---
   {
     id: "of-100",
-    name: "Open Fryer OF-100",
+    name: "Rack Fryer",
     category: "open-fryer",
     priority: 5,
-    image: "../images/rack-fryer.PNG",
-    images: ["../images/rack-fryer.PNG", "../images/rack-fryer.PNG", "../images/rack-fryer.PNG"],
+    image: "../images/open-fryer.jpg",
+    images: ["../images/open-fryer.jpg", "../images/open-fryer.jpg", "../images/open-fryer.jpg"],
     description: "Reliable open fryer for general purpose frying needs.",
-    features: ["Simple manual controls", "Easy cleaner pot", "Cold zone", "Durable heating elements"],
-    specs: { "Oil Capacity": "18 Liters", "Power": "12 kW", "Type": "Electric" }
+    features: ["6-head chicken or (6.5 kg) of food per load", "Fast recovery in electric and gas units", "Gas units: Reliable draft-induced heat transfer technology with solid-state ignition", "Accepts standard half-racks to minimize product handling", "Counter-balance lid lift","Fully insulated, heavy-duty stainless steel fry pot"],
+    specs: { "Oil Capacity": "24 Liters", "Power": "380 V", "Watts": "9 KW", "Type": "Electric / Gas" }
   },
   {
-    id: "of-200",
-    name: "Open Fryer OF-200 Rack",
+    id: "of-bras-nf1",
+    name: "Open Fryer NF1",
     category: "open-fryer",
     priority: 6,
-    image: "../images/rack-fryer.PNG",
-    images: ["../images/rack-fryer.PNG", "../images/rack-fryer.PNG", "../images/rack-fryer.PNG"],
-    description: "High-capacity rack fryer for frying large batches of chicken parts.",
-    features: ["Rack system", "Auto-lift", "Digital timer", "Stainless steel build"],
-    specs: { "Capacity": "6-head chicken", "Power": "14 kW", "Type": "Electric" }
+    image: "../images/open-fryer-bras-nf1.png",
+    images: ["../images/open-fryer-bras-nf1.png", "../images/open-fryer-bras-nf1.png", "../images/open-fryer-bras-nf1.png"],
+    description: "Reliable open fryer for general purpose frying needs.",
+    features: ["4-head chicken or (4.25 kg) of food per load", "Fast recovery in electric and gas units","Fully insulated, heavy-duty stainless steel fry pot"],
+    specs: { "Oil Capacity": "26 Liters", "Power": "380 V", "Watts": "18 KW", "Type": "Electric / Gas" }
   },
+
   {
-    id: "of-300",
-    name: "Open Fryer OF-300 Gas",
+    id: "of-bras-nf2",
+    name: "Open Fryer NF2",
     category: "open-fryer",
     priority: 7,
-    image: "../images/rack-fryer.PNG",
-    images: ["../images/rack-fryer.PNG", "../images/rack-fryer.PNG", "../images/rack-fryer.PNG"],
-    description: "Gas-powered open fryer for locations with limited electrical capacity.",
-    features: ["High-efficiency burners", "Electronic ignition", "Safety shut-off", "Adjustable legs"],
-    specs: { "Oil Capacity": "25 Liters", "BTU": "90,000", "Type": "Gas" }
+    image: "../images/open-fryer-bras-nf2.png",
+    images: ["../images/open-fryer-bras-nf2.png", "../images/open-fryer-bras-nf2.png", "../images/open-fryer-bras-nf2.png"],
+    description: "Reliable open fryer for general purpose frying needs.",
+    features: ["4-head chicken or (4.25 kg) of food per load", "Fast recovery in electric and gas units","Fully insulated, heavy-duty stainless steel fry pot"],
+    specs: { "Oil Capacity": "26 Liters", "Power": "380 V", "Watts": "9 KW", "Type": "Electric / Gas" }
   },
-  {
-    id: "of-400",
-    name: "Open Fryer OF-400 Digital",
-    category: "open-fryer",
-    priority: 8,
-    image: "../images/rack-fryer.PNG",
-    images: ["../images/rack-fryer.PNG", "../images/rack-fryer.PNG", "../images/rack-fryer.PNG"],
-    description: "Digital control open fryer with precise temperature management.",
-    features: ["LED Display", "7 programmable buttons", "Melt cycle", "Over-temp protection"],
-    specs: { "Oil Capacity": "22 Liters", "Power": "14 kW", "Type": "Electric" }
-  },
+
+
 
   // --- Combi Ovens (4 items) ---
   {
-    id: "co-100",
-    name: "Combi Oven CO-100 Mini",
-    category: "combi-oven",
+    id: "massage-tumbler-1",
+    name: "Vacuum Massage Tumblers Machine",
+    category: "others",
     priority: 9,
-    image: "../images/combi-oven.webp",
-    images: ["../images/combi-oven.webp", "../images/combi-oven.webp", "../images/combi-oven.webp"],
-    description: "Compact combi oven suitable for cafes and small kitchens.",
-    features: ["Convection & Steam", "Touch control", "Core probe", "Auto clean"],
-    specs: { "Capacity": "6 x GN 1/1", "Power": "9 kW", "Dimensions": "Small footprint" }
-  },
-  {
-    id: "co-200",
-    name: "Combi Oven CO-200 Std",
-    category: "combi-oven",
-    priority: 10,
-    image: "../images/combi-oven.webp",
-    images: ["../images/combi-oven.webp", "../images/combi-oven.webp", "../images/combi-oven.webp"],
-    description: "Standard 10-tray combi oven for versatility in menu creation.",
-    features: ["Multi-point probe", "HACCP data", "Auto-reverse fan", "Double glass door"],
-    specs: { "Capacity": "10 x GN 1/1", "Power": "18 kW", "Dimensions": "Standard" }
-  },
-  {
-    id: "co-300",
-    name: "Combi Oven CO-300 Plus",
-    category: "combi-oven",
-    priority: 11,
-    image: "../images/combi-oven.webp",
-    images: ["../images/combi-oven.webp", "../images/combi-oven.webp", "../images/combi-oven.webp"],
-    description: "Advanced combi oven with boiler system for heavy steaming generation.",
-    features: ["Boiler steam gen", "Humidity control", "99 programs", "Retractable shower"],
-    specs: { "Capacity": "10 x GN 1/1", "Power": "19 kW", "Steam": "Boiler" }
-  },
-  {
-    id: "co-400",
-    name: "Combi Oven CO-400 Max",
-    category: "combi-oven",
-    priority: 12,
-    image: "../images/combi-oven.webp",
-    images: ["../images/combi-oven.webp", "../images/combi-oven.webp", "../images/combi-oven.webp"],
-    description: "Large capacity roll-in combi oven for banquet and catering operations.",
-    features: ["Trolley system", "Touchscreen", "Advanced cleaning", "Cloud connectivity"],
-    specs: { "Capacity": "20 x GN 1/1", "Power": "32 kW", "Type": "Roll-in" }
+    image: "../images/marinate-vacum-tumbler.png",
+    images: ["../images/marinate-vacum-tumbler.png", "../images/marinate-vacum-tumbler.png", "../images/marinate-vacum-tumbler.png"],
+    description: "Vacuum Massage Tumblers Machine from NSRCO Machinery . is made of stainless steel. This machine is for shortening pickling time while upgrading product freshness, increasing water content in pickles, maintaining tenderness and then improving product quality.",
+    features: ["Complete stainless steel structure for maximum durability", "Hygienic design, easy to clean", "It is easy to operate, minimum trouble and allows for continuous 24-hour operation", "Auto clean"],
+    specs: { "Capacity": " 250 L, 200 L, 150 L", "Power": "380 V","Watts" : "700 W", }
   },
 
   // --- Holding Equipment (3 items) ---
@@ -158,26 +96,4 @@ const productsData = [
     features: ["Adjustable humidity", "Digital display", "Pass-through option", "Insulated"],
     specs: { "Capacity": "5 Pans", "Power": "1 kW", "Temp": "65-90°C" }
   },
-  {
-    id: "he-200",
-    name: "Holding Cabinet HE-200 Upright",
-    category: "holding-equipment",
-    priority: 14,
-    image: "../images/holding-equipment.webp",
-    images: ["../images/holding-equipment.webp", "../images/holding-equipment.webp", "../images/holding-equipment.webp"],
-    description: "Full-size upright holding cabinet for bulk food storage.",
-    features: ["Dutch doors", "Heavy insulation", "Castors with brakes", "Simple controls"],
-    specs: { "Capacity": "12 Pans", "Power": "2 kW", "Temp": "65-90°C" }
-  },
-  {
-    id: "he-300",
-    name: "Holding Drawer HE-300",
-    category: "holding-equipment",
-    priority: 15,
-    image: "../images/holding-equipment.webp",
-    images: ["../images/holding-equipment.webp", "../images/holding-equipment.webp", "../images/holding-equipment.webp"],
-    description: "Drawer warmer for keeping breads, rolls, or sides hot and accessible.",
-    features: ["Individual drawer control", "Moist/Crisp slider", "Robust rails", "Stackable"],
-    specs: { "Capacity": "2 Drawers", "Power": "1.5 kW", "Temp": "60-95°C" }
-  }
 ];
