@@ -307,7 +307,7 @@ a:hover {
 
 .hero {
   min-height: 100vh;
-  background: url('nsrco-hero.jpg') center/cover no-repeat;
+  background: url('nsrco-hero.webp') center/cover no-repeat;
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -874,7 +874,7 @@ body {
 
 .hero {
   height: 100vh;
-  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('nsrco-hero.jpg') center/cover;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('nsrco-hero.webp') center/cover;
 }
 
 body {
@@ -1053,5 +1053,5 @@ body {
 
 .hero {
   height: 100vh;
-  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('nsrco-hero.jpg') center/cover;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('nsrco-hero.webp') center/cover;
 }
