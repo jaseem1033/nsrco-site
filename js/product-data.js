@@ -71,11 +71,11 @@ const productsData = [
 
 
 
-  // --- Combi Ovens (4 items) ---
+  // --- Massage Tumblers (1 item) ---
   {
     id: "massage-tumbler-1",
     name: "Vacuum Massage Tumblers Machine",
-    category: "others",
+    category: "massage-tumblers",
     priority: 9,
     image: "../images/marinate-vacum-tumbler.webp",
     images: ["../images/marinate-vacum-tumbler.webp", "../images/marinate-vacum-tumbler.webp", "../images/marinate-vacum-tumbler.webp"],
@@ -88,7 +88,7 @@ const productsData = [
   {
     id: "he-100",
     name: "Holding Cabinet HE-100",
-    category: "holding-equipment",
+    category: "others",
     priority: 13,
     image: "../images/holding-equipment.webp",
     images: ["../images/holding-equipment.webp", "../images/holding-equipment.webp", "../images/holding-equipment.webp"],
